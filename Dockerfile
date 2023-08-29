@@ -5,5 +5,4 @@ FROM amazoncorretto:8u382-alpine3.18
 ENV JAVA_HOME /usr/lib/jvm/java-8-amazon-corretto
 
 WORKDIR /app
-COPY ./demo .
 CMD ./gradlew bootRun
