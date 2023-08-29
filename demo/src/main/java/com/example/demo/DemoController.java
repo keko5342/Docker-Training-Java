@@ -1,13 +1,18 @@
 package com.example.demo;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DemoController {
 
-  @RequestMapping(value="/demo")
+  @GetMapping("/")
   private String hello(){
-    return "/index.html";
+    return "index";
+  }
+
+  @GetMapping("/hotReload")
+  private String hotReload(){
+    return "/";
   }
 }
