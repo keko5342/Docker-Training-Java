@@ -11,8 +11,8 @@ public class DemoController {
     return "index";
   }
 
-  @GetMapping("/hotReload")
+  @GetMapping("/h")
   private String hotReload(){
-    return "/";
+    return "/hotReload";
   }
 }

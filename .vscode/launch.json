@@ -2,11 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",           // 言語を指定
-      "name": "java (Attach)",  // 任意の名前
-      "request": "attach",      // すでに起動しているプログラムにアタッチ
-      "hostName": "java",       // コンテナ名を指定
-      "port": 5050              // 接続するポートを指定
+      "type": "java",
+      "name": "DemoApplication",
+      "request": "launch",
+      "mainClass": "com.example.demo.DemoApplication",
+      "projectName": "demo"
+    },
+    {
+      "type": "java",
+      "name": "java (Attach)",
+      "request": "attach",
+      "hostName": "java",
+      "port": 5050
     }
   ]
  }
