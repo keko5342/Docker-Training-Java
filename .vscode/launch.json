@@ -8,12 +8,5 @@
       "mainClass": "com.example.demo.DemoApplication",
       "projectName": "demo"
     },
-    {
-      "type": "java",
-      "name": "java (Attach)",
-      "request": "attach",
-      "hostName": "java",
-      "port": 5050
-    }
   ]
  }
