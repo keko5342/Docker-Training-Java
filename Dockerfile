@@ -6,8 +6,10 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-amazon-corretto
 
 WORKDIR /app
 RUN yum update && \
-    yum install -y tar && \
-    yum install -y java-17-amazon-corretto
+    yum install -y tar \
+        java-17-amazon-corretto && \
+    rm -rf /var/cache/yum/* && \
+    yum clean all
 #RUN wget -O /etc/apk/keys/amazoncorretto.rsa.pub  https://apk.corretto.aws/amazoncorretto.rsa.pub && \
 #    echo "https://apk.corretto.aws/" >> /etc/apk/repositories && \
 #    apk update
